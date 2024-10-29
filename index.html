@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <form >
+            <div class="form-container">
+        <h1>Contact Us</h1>
+        <div class="row">
+          <div class="col">
+            <h2>Username</h2>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              class="forminput"
+              onkeyup="validateUsername()"
+            maxlength="8"
+              />
+          </div>
+          <div class="col">
+            <h2>Email</h2>
+           
+            <input type="text" id="email" name="email" placeholder="Email"     class="forminput" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>Phone Number</h2>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              class="forminput"
+ 
+              />
+          </div>
+          <div class="col">
+            <h2>Password</h2>
+            <input
+              type="text"
+              id="password"
+              name="password"
+              placeholder="Password"
+              class="forminput"
+              maxlength="16"
+            />
+          </div>
+        </div>
+       
+          <div class="btn"> 
+            <h5 id="error" style="padding: 10px ;color: red  "></h5>
+             <button id="submit" type="submit">Submit</button>
+          </div>
+        </div>
+        </form>
+      
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
